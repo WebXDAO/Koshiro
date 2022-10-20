@@ -26,7 +26,7 @@ npm install
 DISCORD_BOT_TOKEN=<mandatory>
 ```
 
-4. Start up Kirisho 💮 !
+4. Start up Koshiro 💮 !
 
 ```bash
 npm run start:dev
