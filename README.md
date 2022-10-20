@@ -1,3 +1,7 @@
+[![KISHIRO BANNER](https://user-images.githubusercontent.com/50140834/196954253-1aa6e9a9-7d9a-426f-8889-6109f8d9da9a.png)](#add-link)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mkubdev/blender-cheatsheet/blob/main/LICENSE)
+
+
 # Koshiro
 
 Meet Koshiro! Our official Discord Bot, Open Source and Community builded. 🛸
