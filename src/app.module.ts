@@ -7,12 +7,14 @@ import configuration from './config/configuration';
 // WebXDAO: Custom Bot Feature Modules
 import { DiscordModuleCustom } from './discord/discord.module';
 import { BotConfigModule } from './config/bot-config.module';
+import { BotModule } from './bot/bot.module';
 
 @Module({
   imports: [
     // 🔧 -- CORE MODULE
     BotConfigModule,
     DiscordModuleCustom,
+    BotModule,
 
     // 💠 -- CUSTOM MODULES
   ],
