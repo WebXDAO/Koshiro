@@ -27,6 +27,7 @@
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@octokit/rest": "^19.0.5",
     "discord.js": "^14.6.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

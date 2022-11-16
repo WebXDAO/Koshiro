@@ -9,8 +9,6 @@ import {
 import { Injectable, Logger } from '@nestjs/common';
 import { Client } from 'discord.js';
 
-import { StartDto } from './dto/start.dto';
-
 @Injectable()
 export class BotGateway {
   private readonly logger = new Logger(BotGateway.name);
@@ -22,14 +20,16 @@ export class BotGateway {
 
   @Once('ready')
   onReady() {
-    this.logger.log(`Bot ${this.client.user.tag} was started!`);
+    this.logger.log(`Bot ${this.client.user.tag} was started! `);
   }
 
-  @PrefixCommand({ prefix: '!', name: 'start' })
+  /**
+   * This need to be fixed. The bot still not collect the message.
+   */
+  @PrefixCommand({ prefix: '!', name: 'dev' })
   @UsePipes(PrefixCommandTransformPipe)
-  async onMessage(@Payload() dto: StartDto): Promise<string> {
-    console.log(dto);
-
+  async onMessage(@Payload() dto: any): Promise<string> {
+    console.log(dto, 'coucou');
     return 'Message processed successfully';
   }
 }

@@ -18,8 +18,13 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
             // https://support-dev.discord.com/hc/en-us/articles/4404772028055
             // GatewayIntentBits.MessageContent,
           ],
-          prefix: '!',
         },
+        registerCommandOptions: [
+          {
+            forGuild: configService.get('GUILD_ID_WITH_COMMANDS'),
+            removeCommandsBefore: true,
+          },
+        ],
         failOnLogin: true,
       }),
       inject: [ConfigService],
