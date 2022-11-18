@@ -7,5 +7,7 @@ export default () => ({
   },
   discordjs: {
     token: process.env.DISCORD_BOT_TOKEN,
+    guild: process.env.GUILD_ID_WITH_COMMANDS,
+    roles: process.env.ROLE_WITHOUT_PLAYLIST_PERMISSION,
   },
 });
